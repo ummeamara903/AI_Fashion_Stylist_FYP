@@ -6,6 +6,8 @@ class Recommendation(Base):
 
     id = Column(Integer, primary_key=True, index=True)
 
+    user = Column(String, index=True, nullable=False)
+
     gender = Column(String)
     season = Column(String)
     occasion = Column(String)

@@ -8,14 +8,13 @@ import joblib
 import os
 
 # Load dataset
-dataset = pd.read_csv("dataset/fashion_dataset.csv")
-
+dataset = pd.read_csv(r"D:\FashionStylist\Fashionscience\dataset\fashion_dataset.csv")
 # Drop unnecessary column
 dataset = dataset.drop(columns=['fabric'], errors='ignore')
-
+print(dataset["occasion"].unique())
 categorical_cols = ['gender','season','occasion','dress_type']
 
-# ✅ Convert multi-item columns (IMPORTANT FIX: include all targets)
+#  Convert multi-item columns (IMPORTANT FIX: include all targets)
 dataset['product'] = dataset['product'].apply(lambda x: [i.strip() for i in str(x).split('+')])
 dataset['accessory'] = dataset['accessory'].apply(lambda x: [i.strip() for i in str(x).split('+')])
 dataset['shoes'] = dataset['shoes'].apply(lambda x: [i.strip() for i in str(x).split('+')])
