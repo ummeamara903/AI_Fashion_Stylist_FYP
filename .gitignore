@@ -1,22 +1,87 @@
+# =========================
 # Python
+# =========================
 __pycache__/
-*.pyc
-# Virtual environment
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environments
 .venv/
-# Environment variables
+venv/
+env/
+
+# Environment Variables
 .env
+.env.*
+
+# =========================
+# FastAPI / Python
+# =========================
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Next.js
+# =========================
+.next/
+out/
+node_modules/
+
+# Build Files
+dist/
+build/
+
+# =========================
 # VS Code
+# =========================
 .vscode/
-# OS files
+
+# =========================
+# OS Files
+# =========================
 .DS_Store
-# ML models
+Thumbs.db
+
+# =========================
+# ML Models
+# =========================
 *.pkl
-# Ignore dataset folder
+*.joblib
+*.h5
+*.pt
+*.pth
+
+# =========================
+# Dataset
+# =========================
 fashionscience/dataset/
 
-# Ignore mapping file
+# =========================
+# Notes
+# =========================
+notes
+fashionscience/notes
+
+# =========================
+# Mapping File
+# =========================
 fashionscience/mapping.py
 
-# Ignore ML models
-*.pkl
+# =========================
+# ZIP Files
+# =========================
+*.zip
 
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.temp
