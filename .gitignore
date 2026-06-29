@@ -5,15 +5,22 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+*.so
 
+# =========================
 # Virtual Environments
+# =========================
 .venv/
 venv/
 env/
+ENV/
 
+# =========================
 # Environment Variables
+# =========================
 .env
 .env.*
+!.env.example
 
 # =========================
 # FastAPI / Python
@@ -22,6 +29,12 @@ env/
 .mypy_cache/
 .coverage
 htmlcov/
+.cache/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
 
 # =========================
 # Next.js
@@ -30,7 +43,9 @@ htmlcov/
 out/
 node_modules/
 
+# =========================
 # Build Files
+# =========================
 dist/
 build/
 
@@ -38,6 +53,11 @@ build/
 # VS Code
 # =========================
 .vscode/
+
+# =========================
+# JetBrains IDEs
+# =========================
+.idea/
 
 # =========================
 # OS Files
@@ -53,17 +73,20 @@ Thumbs.db
 *.h5
 *.pt
 *.pth
+*.onnx
 
 # =========================
 # Dataset
 # =========================
 fashionscience/dataset/
+dataset/
+datasets/
 
 # =========================
 # Notes
 # =========================
-notes
-fashionscience/notes
+notes/
+fashionscience/notes/
 
 # =========================
 # Mapping File
@@ -71,17 +94,33 @@ fashionscience/notes
 fashionscience/mapping.py
 
 # =========================
-# ZIP Files
-# =========================
-*.zip
-
-# =========================
 # Logs
 # =========================
 *.log
+logs/
 
 # =========================
 # Temporary Files
 # =========================
 *.tmp
 *.temp
+
+# =========================
+# ZIP Files
+# =========================
+*.zip
+*.rar
+*.7z
+
+# =========================
+# Database Files
+# =========================
+*.db
+*.sqlite3
+
+# =========================
+# Uploaded Images
+# =========================
+uploads/
+media/
+static/uploads/
